@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="imageencoder.cximage"
+  version="1.0.0"
+  name="cximage image encoder"
+  provider-name="spiff">
+  <requires>
+    <c-pluff version="0.1"/>
+  </requires>
+  <extension
+    point="kodi.imageencoder"
+    library_@PLATFORM@="@LIBRARY_FILENAME@"
+    mimetype="image/png|image/bmp|image/raw|image/tif|image/tiff|image/tga|image/pcx|image/dng|image/cr2"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>cximage based image en/decoder</summary>
+    <description>cximage based image en/decoder</description>
+    <platform>@PLATFORM@</platform>
+  </extension>
+</addon>
